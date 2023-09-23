@@ -49,6 +49,8 @@ h2 {
     color: var(--main-color);
     line-height: 42.19px;
     text-align: center;
+    letter-spacing: 3%;
+    font-size:36px ;
 }
 
 .pharagraph-heading {
@@ -75,11 +77,18 @@ h2 {
 
         /* HEADER */
 
-header nav, .nav-contacts{ 
+header .nav-contacts{ 
     font-size: 14px;
     font-family: var(--body-font-family);
     font-weight: 400;
     line-height: 18.75px;
+}
+
+header .main-navigation {
+    font-size: var(--pharagraph-font-size);
+    font-family: var(--body-font-family);
+    font-weight: 500;
+    line-height: 16.41px;
 }
 
 .navigation-link-current {
@@ -151,7 +160,14 @@ main h1 {
     color:#fff;
 }
 
-
+.our-team {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    height: 648px;
+    background-color: #F5F4FA;
+    width: 100%;
+}
 
 .our-team h4 {
     text-align: center;
@@ -161,19 +177,14 @@ main h1 {
     text-align: center;
 }
 
-.our-team {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 18.75px;
-    height: 648px;
-    background-color: #F5F4FA;
-}
+
 
 .our-team li {
     width: 270px;
     height: 368px;
     background-color: #fff;
     box-shadow: 0px 2px 1px 0px #00000033;
+    border-radius: 0px 0px 4px 4px;
 }
 
 
@@ -212,9 +223,7 @@ footer p {
 
 
         /* FlexBox */
-    .container {
-        width: 1600px;
-    }
+
 
     .global-header {
         height: 80px;
@@ -222,7 +231,7 @@ footer p {
     }
     
     .logo {
-        padding-left: 215px;
+        padding-left: 15px;
         padding-top: 24px;
         padding-bottom: 25px;
     }    
@@ -241,15 +250,14 @@ footer p {
     .menu-bar .nav-contacts ul {
         display: flex;
         gap: 40px;
-
-    }
-
-    .nav-item1 {
-        padding-left: 93px;
     }
 
     .nav-item4 {
-        padding-left: 385px;
+       margin-left: 227px;
+    }
+
+    .nav-item5 {
+        margin-right: 215px;
     }
 
     .web-main {
@@ -270,53 +278,54 @@ footer p {
 
     .web-main-explanations ul{
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
         gap: 30px;
+        
     }
 
     .web-main-explanations li {
         width: 270px;
         height: 75px;
+        letter-spacing: 3%;
+        line-height: 24px;
     }
 
     .web-main-explanations {
         display: flex;
-        /* justify-content: center; */
+        justify-content: center;
         height: 101px;
         width: 1200px;
-        margin-left: 185px;
+        margin-top: 94px;
     }
 
     .section {
-        padding-top: 94px;
-    }
-
-
-    .what-we-do img {
-        height: 294px;
-        width: 370px;
-    }
-
-    .what-we-do ul{
         display: flex;
-        height: 386px;
-        width: 1200px;
-        margin-left: 185px;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: center;
     }
 
-    .box2 {padding-left: 30px;}
-    .box3 {padding-left: 30px;}
-    
+    .what-we-do {
+        margin-top: 94px;
+        display: flex;
+        flex-direction: column;
+        height: 386px;
+        margin-bottom: 94px;
+    }
 
+    .box2 {margin-left: 30px;}
+    .box3 {margin-left: 30px;}
+    
+    .our-team {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
     .our-team ul{
         display: flex;
-        align-items: center;
         justify-content: center;
         gap: 30px;
+        
     }
 
     .our-team img {
@@ -325,17 +334,6 @@ footer p {
         
     }
 
-    .our-team-photos {
-        width: 1200px;
-        height: 260px;
-        margin-left: 185px;
-        margin-top: 50px;
-        border-radius: 0px 0px 4px 4px;
-    }
-
-    .our-team h2 {
-        padding-top:94px ;
-    }
 
     footer {
         display: flex;
@@ -400,7 +398,6 @@ footer p {
         background-color:#fff;
         border: 1px groove #EEEEEE;
         margin-bottom: 30px;
-
     }
 
 
