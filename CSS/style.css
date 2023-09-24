@@ -71,7 +71,6 @@ h2 {
     font-family: var(--body-font-family);
     font-weight: var(--pharagraph-font-weight);
     color: #757575;
-
 }
 
 
@@ -389,6 +388,7 @@ footer p {
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
+        margin: 0px auto;
 
     }
 
@@ -408,20 +408,30 @@ footer p {
 
     .portofolio nav ul {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        /* justify-content: center;
+        align-items: center; */
         margin-bottom: 50px;
         margin-top: 0px;
     }
 
     .portofolio {
-        margin: 94px 190px;
+        padding-top: 94px;
+        padding-bottom: 64px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .portofolio button {
         height: 38px;
     }
     
+    .portofolio button:hover {
+        background-color: #2196F3 ;
+        color: #FFF;
+    }
+
     .button1 {
         width: 64px;
         margin-right: 8px;
@@ -448,4 +458,14 @@ footer p {
     }
 
 
+    .main-div h4 {
+        padding-top: 20px;
+        padding-left: 24px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        margin: 0px auto;
+    }
 
+    .main-div p {
+        padding-left: 24px;
+    }
